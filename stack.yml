@@ -7,4 +7,8 @@ functions:
     lang: go
     handler: ./helloworld
     image: wilsonianb/helloworld:latest
+  docker:
+    lang: dockerfile
+    handler: ./service-deployment
+    image: service-deployment:latest
 
