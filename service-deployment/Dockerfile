@@ -18,7 +18,7 @@ USER app
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
 ENV fprocess="echo hello codius"
 # Set to true to see request in function logs
-ENV write_debug="false"
+ENV write_debug="true"
 
 EXPOSE 8080
 
