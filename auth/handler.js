@@ -8,8 +8,10 @@ module.exports = async (event, context) => {
 
   if (event.headers['x-original-url'].indexOf('wilsonianb.of.codiusfaas.net') !== -1) {
     return context
-      .status(402)
-      .succeed({})
+      .status(401)
+      .succeed({
+        'status': 'payment required'
+      })
   }
   return context
     .status(200)
