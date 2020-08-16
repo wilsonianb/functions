@@ -11,4 +11,7 @@ functions:
     lang: dockerfile
     handler: ./service-deployment
     image: service-deployment:latest
-
+  auth:
+    lang: node12
+    handler: ./auth
+    image: auth:latest
