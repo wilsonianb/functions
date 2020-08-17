@@ -11,7 +11,7 @@ functions:
     lang: dockerfile
     handler: ./service-deployment
     image: service-deployment:latest
-  auth:
+  paymentrequired:
     lang: node12
-    handler: ./auth
-    image: auth:latest
+    handler: ./paymentrequired
+    image: paymentrequired:latest
