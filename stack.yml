@@ -11,7 +11,3 @@ functions:
     lang: dockerfile
     handler: ./service-deployment
     image: service-deployment:latest
-  paymentrequired:
-    lang: node12
-    handler: ./paymentrequired
-    image: paymentrequired:latest
