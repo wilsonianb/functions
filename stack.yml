@@ -15,3 +15,9 @@ functions:
     lang: node10-express
     handler: ./goto
     image: goto:latest
+  network-policy-test:
+    lang: dockerfile
+    handler: ./network-policy-test
+    image: network-policy-test:latest
+    environment:
+      write_debug: true
