@@ -16,7 +16,7 @@ WORKDIR /home/app
 USER app
 
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
-ENV fprocess="wget -T 1 --spider 10.43.178.166"
+ENV fprocess="wget -T 1 --spider http://hello.kube-system"
 # Set to true to see request in function logs
 ENV write_debug="true"
 
