@@ -11,10 +11,14 @@ functions:
     lang: dockerfile
     handler: ./service-deployment
     image: service-deployment:latest
+    environment:
+      write_debug: true
   goto:
     lang: node10-express
     handler: ./goto
     image: goto:latest
+    environment:
+      write_debug: true
   network-policy-test:
     lang: dockerfile
     handler: ./network-policy-test
