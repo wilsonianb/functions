@@ -25,3 +25,11 @@ functions:
     image: network-policy-test:latest
     environment:
       write_debug: true
+  has-secret:
+    lang: go
+    handler: ./has-secret
+    image: wilsonianb/has-secret:latest
+    environment:
+      write_debug: true
+    secrets:
+    - my-secret
