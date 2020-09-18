@@ -16,7 +16,7 @@ WORKDIR /home/app
 USER app
 
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
-ENV fprocess="wget -T 1 -O - --body-data=hello --method=GET http://echo.openfaas-fn"
+ENV fprocess="wget -T 1 -O - http://echo.openfaas-fn"
 # Set to true to see request in function logs
 ENV write_debug="true"
 
