@@ -33,7 +33,7 @@ functions:
       write_debug: true
     secrets:
     - my-secret
-  classic-go:
+  network-policy-test-go:
     lang: go
     handler: ./classic-go
     image: classic-go:latest

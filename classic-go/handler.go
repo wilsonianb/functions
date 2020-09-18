@@ -10,7 +10,7 @@ import (
 // Handle a serverless request
 func Handle(req []byte) string {
 	var msg = []byte("hello")
-	res, err := http.Post("http://echo.openfaas-fn", "text/plain", bytes.NewBuffer(msg))
+	res, err := http.Post("http://echo.openfaas-fn:8080", "text/plain", bytes.NewBuffer(msg))
 
 	if err != nil {
 		fmt.Println(err)
