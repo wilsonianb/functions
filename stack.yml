@@ -33,3 +33,9 @@ functions:
       write_debug: true
     secrets:
     - my-secret
+  classic-go:
+    lang: go
+    handler: ./classic-go
+    image: classic-go:latest
+    environment:
+      write_debug: true
