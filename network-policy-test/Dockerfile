@@ -24,4 +24,4 @@ EXPOSE 8080
 
 HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
 
-CMD wget -O - http://echo.openfaas-fn:8080 || fwatchdog
+CMD wget -O - http://kubernetes.default:443 || fwatchdog
