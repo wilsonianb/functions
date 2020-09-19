@@ -24,4 +24,4 @@ EXPOSE 8080
 
 HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
 
-CMD nslookup cert-manager.cert-manager.svc.cluster.local || fwatchdog
+CMD while nslookup cert-manager.cert-manager.svc.cluster.local; do echo "no rules"; sleep 1; done && fwatchdog
